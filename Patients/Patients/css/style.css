@@ -1,0 +1,164 @@
+body {
+  margin: 30px 10px;
+  max-width: 1200px;
+  /* min-width: 1000px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* background: lightcyan; */
+}
+
+.results {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+
+}
+
+.results table {
+  margin: 0 auto;
+}
+
+.results table td {
+  padding-left: 10px;
+}
+
+.entry-delete {
+  background-color: red;
+}
+
+.entry-edit {
+  background-color: lightblue;
+}
+
+.patient-row[data-status="false"] {
+  background-color: lightgrey;
+}
+
+/* Formatowanie formularza dodania nowego pacjenta */
+
+#addNewPatientForm {
+  /* width: 50%; */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#addNewPatientForm label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#addNewPatientForm input {
+  /* width: 100%; */
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#addNewPatientForm select {
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#addNewPatientForm button {
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.searchField {
+  margin-bottom: 20px;
+}
+
+/* Formatowanie formularza wyszukiwania wg nazwiska i statusu */
+.searchField form {
+  /* display: flex; */
+}
+
+#searchSurnameStatusForm,#searchOptions {
+  display: flex;
+  flex-direction: left;
+  /* align-items: center; */
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#searchSurnameStatusForm label {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+#searchSurnameStatusForm input[type="text"],
+#searchSurnameStatusForm input[type="checkbox"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 50%;
+}
+
+#searchSurnameStatusForm button[type="submit"],
+#searchSurnameStatusForm button[type="reset"],
+#searchOptions button[type="submit"],
+#searchOptions button[type="reset"] {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  margin-right: 10px;
+  height: 50%;
+}
+
+#searchSurnameStatusForm button[type="reset"],
+#searchOptions button[type="reset"]  {
+  background-color: #f44336;
+}
+
+/* Formatowanie formularza wyszukiwania wg wartosci opcji */
+
+label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 10px;
+}
+
+select {
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* button[type="submit"],
+button[type="reset"] {
+  margin: 20px 10px 0 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+} */

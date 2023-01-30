@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patients</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="addNewField">
+            <form id="addNewPatientForm">
+                <label>Imie
+                    <input type="text" id="inputFirstName">
+                </label>
+                <label>Nazwisko
+                    <input type="text" id="inputSurname">
+                </label>
+                <label>Opcja 1
+                    <select name="option_1" id="option_1">
+                        <option value="0" selected>jeszcze nie rozpoczęty</option>
+                        <option value="1">w trakcie</option>
+                        <option value="2">zrobione</option>
+                        <option value="3">nie dotyczy</option>
+                    </select>
+                </label>
+                <label>Opcja 2
+                    <select name="option_2" id="option_2">
+                        <option value="0" selected>jeszcze nie rozpoczęty</option>
+                        <option value="1">w trakcie</option>
+                        <option value="2">zrobione</option>
+                        <option value="3">nie dotyczy</option>
+                    </select>
+                </label>
+                <button type="submit">Dodaj nowego pacjenta</button>
+            </form>
+        </div>
+
+        <div class="search">
+            <div class="searchField">
+                <form id="searchSurnameStatusForm">
+                    <label>Szukane nazwisko
+                        <input type="text" id="searchSurname"></label>
+                    <label>
+                        Status aktywny
+                        <input type="checkbox" id="selectActiveCheckBox" checked>
+                    </label>
+                    <button type="submit">Wyszukaj</button>
+                    <button type="reset">Resetuj</button>
+                    </label>
+                </form>
+            </div>
+            <div>
+                <form id="searchOptions">
+                    <label>Opcja 1
+                        <select name="option_1" id="searchOption_1">
+                            <option value="0">jeszcze nie rozpoczęty</option>
+                            <option value="1">w trakcie</option>
+                            <option value="2">zrobione</option>
+                            <option value="3">nie dotyczy</option>
+                            <option value="4" selected></option>
+                        </select>
+                    </label>
+                    <label>Opcja 2
+                        <select name="option_2" id="searchOption_2">
+                            <option value="0">jeszcze nie rozpoczęty</option>
+                            <option value="1">w trakcie</option>
+                            <option value="2">zrobione</option>
+                            <option value="3">nie dotyczy</option>
+                            <option value="4" selected></option>
+                        </select>
+                    </label>
+                    <button type="submit">Wyszukaj</button>
+                    <button type="reset">Resetuj</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <div class="results">
+        <table>
+            <thead class="tbl_header">
+                <th>Imie</th>
+                <th>Nazwisko</th>
+                <th>Status</th>
+                <th></th>
+                <th>Opcja_1</th>
+                <th>Opcja_2</th>
+                <th></th>
+            </thead>
+            <tbody class="tbl_body" id="tbl_body"></tbody>
+        </table>
+    </div>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
