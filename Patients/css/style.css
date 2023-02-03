@@ -93,7 +93,7 @@ body {
 #searchSurnameStatusForm,#searchOptions {
   display: flex;
   flex-direction: left;
-  /* align-items: center; */
+  align-items: center;
   padding: 20px;
   background-color: #f2f2f2;
   border-radius: 10px;
@@ -108,7 +108,7 @@ body {
 #searchSurnameStatusForm input[type="text"],
 #searchSurnameStatusForm input[type="checkbox"] {
   padding: 10px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
